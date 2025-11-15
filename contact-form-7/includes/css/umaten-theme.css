@@ -1,0 +1,576 @@
+/*
+ * Contact Form 7 - Umaten Theme
+ * カスタムデザインテーマ for ウマ店
+ *
+ * プライバシーポリシーページのデザインに合わせたスタイル
+ */
+
+/* ============================================================
+   基本設定
+   ============================================================ */
+
+.wpcf7 {
+    font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', YuGothic, Meiryo, sans-serif;
+    line-height: 1.9;
+    color: #2c3e50;
+}
+
+/* ============================================================
+   フォームコンテナ
+   ============================================================ */
+
+.wpcf7 form {
+    background: white;
+    padding: 45px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+    border-left: 5px solid #e74c3c;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wpcf7 form:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================================
+   入力フィールド（テキスト、メール、電話、URL）
+   ============================================================ */
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="url"],
+.wpcf7 input[type="tel"],
+.wpcf7 input[type="number"],
+.wpcf7 input[type="date"],
+.wpcf7 select,
+.wpcf7 textarea {
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border: 2px solid #ecf0f1;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #2c3e50;
+    background: #ffffff;
+    transition: all 0.3s ease;
+    font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', YuGothic, Meiryo, sans-serif;
+    box-sizing: border-box;
+}
+
+.wpcf7 input[type="text"]:focus,
+.wpcf7 input[type="email"]:focus,
+.wpcf7 input[type="url"]:focus,
+.wpcf7 input[type="tel"]:focus,
+.wpcf7 input[type="number"]:focus,
+.wpcf7 input[type="date"]:focus,
+.wpcf7 select:focus,
+.wpcf7 textarea:focus {
+    outline: none;
+    border-color: #e74c3c;
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+    background: #fff5f5;
+}
+
+/* ============================================================
+   テキストエリア
+   ============================================================ */
+
+.wpcf7 textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* ============================================================
+   セレクトボックス
+   ============================================================ */
+
+.wpcf7 select {
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23e74c3c' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 12px;
+    padding-right: 45px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* ============================================================
+   ラベル
+   ============================================================ */
+
+.wpcf7 label {
+    display: block;
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+/* ============================================================
+   必須マーク
+   ============================================================ */
+
+.wpcf7 .wpcf7-form-control-wrap::before {
+    content: '';
+}
+
+.wpcf7 abbr[title] {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+/* ============================================================
+   チェックボックス・ラジオボタン
+   ============================================================ */
+
+.wpcf7 .wpcf7-list-item {
+    margin: 0 0 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.wpcf7 .wpcf7-list-item label {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.wpcf7 input[type="checkbox"],
+.wpcf7 input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-top: 0;
+    cursor: pointer;
+    accent-color: #e74c3c;
+}
+
+.wpcf7 .wpcf7-list-item-label {
+    color: #5a6c7d;
+    font-size: 15px;
+}
+
+/* ============================================================
+   送信ボタン
+   ============================================================ */
+
+.wpcf7 input[type="submit"],
+.wpcf7 button[type="submit"] {
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+    font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', YuGothic, Meiryo, sans-serif;
+    margin-top: 10px;
+}
+
+.wpcf7 input[type="submit"]:hover,
+.wpcf7 button[type="submit"]:hover {
+    background: linear-gradient(135deg, #c0392b 0%, #a93226 100%);
+    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+    transform: translateY(-2px);
+}
+
+.wpcf7 input[type="submit"]:active,
+.wpcf7 button[type="submit"]:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(231, 76, 60, 0.3);
+}
+
+.wpcf7 input[type="submit"]:disabled,
+.wpcf7 button[type="submit"]:disabled {
+    background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/* ============================================================
+   ファイルアップロード
+   ============================================================ */
+
+.wpcf7 input[type="file"] {
+    padding: 12px 15px;
+    border: 2px dashed #ecf0f1;
+    border-radius: 10px;
+    background: #f8f9fa;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    font-size: 14px;
+    color: #5a6c7d;
+}
+
+.wpcf7 input[type="file"]:hover {
+    border-color: #e74c3c;
+    background: #fff5f5;
+}
+
+.wpcf7 input[type="file"]:focus {
+    outline: none;
+    border-color: #e74c3c;
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+}
+
+/* ============================================================
+   レスポンスメッセージ（送信後のフィードバック）
+   ============================================================ */
+
+.wpcf7 form .wpcf7-response-output {
+    margin: 25px 0 0;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* デフォルト状態（情報） */
+.wpcf7 form .wpcf7-response-output {
+    background: linear-gradient(135deg, #e8f8f5 0%, #d5f4e6 100%);
+    border-left: 5px solid #27ae60;
+    color: #27ae60;
+}
+
+/* 送信成功 */
+.wpcf7 form.sent .wpcf7-response-output {
+    background: linear-gradient(135deg, #e8f8f5 0%, #d5f4e6 100%);
+    border-left: 5px solid #27ae60;
+    color: #27ae60;
+}
+
+/* 送信失敗 */
+.wpcf7 form.failed .wpcf7-response-output,
+.wpcf7 form.aborted .wpcf7-response-output {
+    background: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 100%);
+    border-left: 5px solid #e74c3c;
+    color: #c0392b;
+}
+
+/* スパム判定 */
+.wpcf7 form.spam .wpcf7-response-output {
+    background: linear-gradient(135deg, #fff9e6 0%, #ffedd5 100%);
+    border-left: 5px solid #f39c12;
+    color: #e67e22;
+}
+
+/* バリデーションエラー */
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.payment-required .wpcf7-response-output {
+    background: linear-gradient(135deg, #fff9e6 0%, #ffedd5 100%);
+    border-left: 5px solid #f39c12;
+    color: #e67e22;
+}
+
+/* ============================================================
+   バリデーションエラーメッセージ
+   ============================================================ */
+
+.wpcf7-not-valid-tip {
+    color: #e74c3c;
+    font-size: 13px;
+    font-weight: 600;
+    display: block;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+}
+
+.use-floating-validation-tip .wpcf7-not-valid-tip {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+    background: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 100%);
+    border: 2px solid #e74c3c;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-top: 5px;
+    box-shadow: 0 3px 15px rgba(231, 76, 60, 0.15);
+    width: auto;
+    max-width: 300px;
+}
+
+/* 入力エラーのフィールドハイライト */
+.wpcf7 input.wpcf7-not-valid,
+.wpcf7 select.wpcf7-not-valid,
+.wpcf7 textarea.wpcf7-not-valid {
+    border-color: #e74c3c;
+    background: #fff5f5;
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+}
+
+/* ============================================================
+   スピナー（送信中の読み込みアニメーション）
+   ============================================================ */
+
+.wpcf7-spinner {
+    visibility: hidden;
+    display: inline-block;
+    background-color: #e74c3c;
+    opacity: 1;
+    width: 24px;
+    height: 24px;
+    border: none;
+    border-radius: 100%;
+    padding: 0;
+    margin: 0 0 0 15px;
+    position: relative;
+    vertical-align: middle;
+}
+
+form.submitting .wpcf7-spinner {
+    visibility: visible;
+}
+
+.wpcf7-spinner::before {
+    content: '';
+    position: absolute;
+    background-color: #ffffff;
+    top: 4px;
+    left: 4px;
+    width: 6px;
+    height: 6px;
+    border: none;
+    border-radius: 100%;
+    transform-origin: 8px 8px;
+    animation-name: spin;
+    animation-duration: 1000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ============================================================
+   送信中の状態
+   ============================================================ */
+
+.wpcf7 form.submitting input[type="submit"],
+.wpcf7 form.submitting button[type="submit"] {
+    background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);
+    cursor: wait;
+}
+
+.wpcf7 [inert] {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* ============================================================
+   アクセシビリティ（スクリーンリーダー用）
+   ============================================================ */
+
+.wpcf7 .screen-reader-response {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    word-wrap: normal !important;
+}
+
+/* ============================================================
+   プレースホルダー
+   ============================================================ */
+
+.wpcf7 input::placeholder,
+.wpcf7 textarea::placeholder {
+    color: #95a5a6;
+    opacity: 0.7;
+    font-style: italic;
+}
+
+.wpcf7 input:focus::placeholder,
+.wpcf7 textarea:focus::placeholder {
+    opacity: 0.4;
+}
+
+/* ============================================================
+   フォームグループ（複数要素のグループ化）
+   ============================================================ */
+
+.wpcf7 .wpcf7-form-control-wrap {
+    position: relative;
+    display: block;
+    margin-bottom: 25px;
+}
+
+/* ============================================================
+   reCAPTCHA等の統合要素
+   ============================================================ */
+
+.wpcf7 .wpcf7-recaptcha {
+    margin-bottom: 20px;
+}
+
+/* ============================================================
+   同意チェックボックス
+   ============================================================ */
+
+.wpcf7 .wpcf7-acceptance {
+    margin: 20px 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #fff9e6 0%, #ffedd5 100%);
+    border-left: 5px solid #f39c12;
+    border-radius: 10px;
+}
+
+.wpcf7 .wpcf7-acceptance .wpcf7-list-item {
+    margin: 0;
+}
+
+/* ============================================================
+   クイズ・CAPTCHA
+   ============================================================ */
+
+.wpcf7 .wpcf7-quiz-label,
+.wpcf7 .wpcf7-captcha-label {
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* ============================================================
+   レスポンシブデザイン
+   ============================================================ */
+
+@media (max-width: 768px) {
+    .wpcf7 form {
+        padding: 30px 25px;
+    }
+
+    .wpcf7 input[type="text"],
+    .wpcf7 input[type="email"],
+    .wpcf7 input[type="url"],
+    .wpcf7 input[type="tel"],
+    .wpcf7 input[type="number"],
+    .wpcf7 input[type="date"],
+    .wpcf7 select,
+    .wpcf7 textarea {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+
+    .wpcf7 input[type="submit"],
+    .wpcf7 button[type="submit"] {
+        padding: 12px 30px;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .wpcf7-spinner {
+        margin: 15px auto 0;
+        display: block;
+    }
+
+    .use-floating-validation-tip .wpcf7-not-valid-tip {
+        position: relative;
+        top: auto;
+        left: auto;
+        max-width: 100%;
+        margin-top: -10px;
+        margin-bottom: 15px;
+    }
+}
+
+/* ============================================================
+   追加のカスタマイズ
+   ============================================================ */
+
+/* フォームの行・列レイアウト */
+.wpcf7 .wpcf7-form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.wpcf7 .wpcf7-form-row > * {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .wpcf7 .wpcf7-form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+/* フォームタイトル */
+.wpcf7 .wpcf7-form-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #ecf0f1;
+    display: flex;
+    align-items: center;
+}
+
+/* フォーム説明文 */
+.wpcf7 .wpcf7-form-description {
+    color: #5a6c7d;
+    font-size: 15px;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+/* 必須項目の注意書き */
+.wpcf7 .wpcf7-required-notice {
+    background: linear-gradient(135deg, #fff9e6 0%, #ffedd5 100%);
+    border-left: 5px solid #f39c12;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    color: #e67e22;
+    font-size: 14px;
+}
+
+/* プライバシーポリシーリンク */
+.wpcf7 .wpcf7-privacy-policy-link {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.wpcf7 .wpcf7-privacy-policy-link:hover {
+    color: #c0392b;
+    text-decoration: underline;
+}
+
+/* 送信ボタンのコンテナ */
+.wpcf7 .wpcf7-submit-wrapper {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #ecf0f1;
+}
